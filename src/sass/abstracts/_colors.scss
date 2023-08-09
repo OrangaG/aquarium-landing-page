@@ -1,0 +1,27 @@
+// $background-color1: #33c0b2;
+// $text-color2: #0c098e;
+// $accent-color-1color3: #e4d66d;
+// $accent-2-color4: #5b4326;
+
+// $background-color1: #1e3343;
+// $text-color2: #d9eafa;
+// $accent-color-1color3: #db525e;
+// $accent-2-color4: #32ade3;
+
+// $background-color1: #32ade3;
+// $text-color2: #fbd200;
+// $accent-1: #202020;
+// $accent-color-2: #f38897;
+
+$background-color1: #2f8cfa;
+$text-color2: #fbd740;
+$accent-1: #5d4710;
+
+:root {
+  --body-color: hsl(260, 100%, 97%);
+  --text-color: hsl(260, 24%, 32%);
+  --title-color: hsl(260, 80%, 18%);
+  --container-color: hsl(0, 0%, 100%);
+  --header-blur: hsla(0, 0%, 100%, 0.3);
+  --footer-bg: hsl(260, 80%, 18%);
+}
