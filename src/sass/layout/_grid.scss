@@ -1,0 +1,9 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.5rem;
+}
+
+.span-4 {
+  grid-column: span 4;
+}

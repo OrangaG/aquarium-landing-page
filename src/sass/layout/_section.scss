@@ -1,0 +1,71 @@
+@use "../abstracts/colors" as c;
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.services__card {
+  padding: 2rem;
+  background-color: c.$secondary-color;
+  color: c.$accent-color;
+  border-radius: 1rem;
+}
+
+.design__title {
+  color: c.$primary-color;
+}
+
+.discover {
+  color: c.$secondary-color;
+
+  .discover__cards {
+    .card {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      width: 80%;
+      margin-inline: auto;
+      border-radius: 1rem;
+      color: c.$secondary-color;
+      background-color: c.$accent-color;
+    }
+  }
+}
+
+.about__numbers {
+  background-color: c.$secondary-color;
+  .number {
+    color: c.$primary-color;
+  }
+  .number__info {
+    color: c.$accent-color;
+  }
+}
+
+.blog__card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: c.$secondary-color;
+  border-radius: 16px;
+
+  .card__info {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .card__title {
+    color: c.$primary-color;
+  }
+
+  .card__text {
+    color: c.$primary-color;
+  }
+}
+
+.testimonial__card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: c.$secondary-color;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

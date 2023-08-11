@@ -1,1 +1,23 @@
+@use "../abstracts/colors" as c;
 
+body {
+  background-color: c.$primary-color;
+}
+
+a {
+  color: c.$secondary-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: c.$secondary-color;
+}
+
+footer {
+  background-color: c.$secondary-color;
+  p {
+    color: c.$accent-color;
+  }
+}

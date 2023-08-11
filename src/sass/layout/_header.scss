@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as v;
+
+header {
+  //   height: v.$header-height;
+  //   position: fixed;
+  //   padding: 2rem;
+
+  .logo {
+    grid-column: 1 / span 2;
+  }
+}

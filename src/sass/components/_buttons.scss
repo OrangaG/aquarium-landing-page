@@ -1,0 +1,11 @@
+@use "../abstracts/colors" as c;
+
+.btn {
+  display: inline-flex;
+  width: max-content;
+  border-radius: 5px;
+  background-color: c.$accent-color;
+  padding: 0.5rem;
+  color: c.$secondary-color;
+  font-size: 1rem;
+}

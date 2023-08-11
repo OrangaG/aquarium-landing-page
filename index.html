@@ -8,8 +8,8 @@
     <title>Aquarius</title>
   </head>
   <body>
-    <header class="header | grid container">
-      <nav>
+    <header class="header | container">
+      <nav class="grid">
         <div class="logo">Aquarius</div>
         <ul class="nav__links">
           <li><a href="#home">Home</a></li>
@@ -22,7 +22,7 @@
       </nav>
     </header>
 
-    <main class="container | grid">
+    <main class="container">
       <!-- Home section -->
       <section class="home | section" id="home">
         <div class="home__info">
@@ -32,7 +32,7 @@
         </div>
 
         <img
-          src="/hero-section-img.jpg"
+          src="/blog-img-3.jpg"
           alt="yellow fish in aquarium"
           class="home__img"
         />
@@ -40,8 +40,8 @@
 
       <!-- Services section -->
       <section class="services | section grid" id="services">
-        <h2 class="section__title">Our Services</h2>
-        <div class="services__design">
+        <h2 class="section__title | span-4">Our Services</h2>
+        <div class="services__card | span-4">
           <img src="/services-img-1.jpg" alt="" class="design__img" />
           <div class="section__logo">&mdash; Aquarius</div>
           <div class="section__text">
@@ -55,11 +55,10 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
               tenetur praesentium magnam quas, illum quibusdam?
             </p>
-            <a href="#" class="design__btn | primary-btn">Learn More</a>
           </div>
         </div>
 
-        <div class="services__maintenance">
+        <div class="services__card | span-4">
           <img src="/services-img-2.jpg" alt="" class="design__img" />
           <div class="section__logo">&mdash; Aquarius</div>
           <div class="section__text">
@@ -73,12 +72,12 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
               tenetur praesentium magnam quas, illum quibusdam?
             </p>
-            <a href="#" class="design__btn | primary-btn">Learn More</a>
           </div>
         </div>
       </section>
+
       <section class="discover | section grid">
-        <div class="discover__info">
+        <div class="discover__info | span-4">
           <h2 class="discover__title">Discover More</h2>
           <p class="discover__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
@@ -87,39 +86,77 @@
           </p>
         </div>
 
-        <div class="discover__cards">
+        <div class="discover__cards | span-4">
           <div class="card">
             <img
               src="/cleaning-services-img.jpg"
               alt="fish in an aquarium tank"
             />
-            <p class="card__text">Cleaning Services</p>
+            <div class="card__info">
+              <h3>Cleaning Services</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate aperiam porro nisi sint dignissimos, quibusdam aliquid
+                et aspernatur nulla, dolorum velit optio quidem esse. Ut quae
+                excepturi accusantium nihil voluptas.
+              </p>
+            </div>
           </div>
           <div class="card">
             <img src="/aquarium-maintenance.jpg" alt="school of fish" />
-            <p class="card__text">Aquarium Maintenance</p>
+            <div class="card__info">
+              <h3>Aquarium Maintenance</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                facilis et voluptate similique, quibusdam error recusandae cum
+                sit natus fugiat optio deleniti expedita ex tempora laudantium?
+                Eveniet dolore natus eos!
+              </p>
+            </div>
           </div>
           <div class="card">
             <img
               src="/aquarium-design.jpg"
               alt="school of fish in a circular aquarium tank"
             />
-            <p class="card__text">Aquarium Design</p>
+            <div class="card__info">
+              <h3>Aquarium Design</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quidem, accusantium unde officia voluptate asperiores aspernatur
+                repellendus voluptatum est ipsam distinctio natus modi beatae?
+                Quisquam natus id ipsa nulla, fugiat minima.
+              </p>
+            </div>
           </div>
           <div class="card">
-            <img src="/aquarium-supply.jpg" alt="aquarium tanks" />
-            <p class="card__text">Aquarium Supply</p>
+            <img src="./aquarium-supply.jpg" alt="" />
+            <div class="card__info">
+              <h3>Aquarium Supply</h3>
+              <p class="card__info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                quisquam eum animi culpa saepe pariatur est doloremque totam
+                enim aspernatur, consequuntur error velit quaerat asperiores
+                sunt illum officiis alias molestias.
+              </p>
+            </div>
           </div>
           <div class="card">
             <img src="/healthy-services.jpg" alt="orange fish in aquarium" />
-            <p class="card__text">Healthy Services</p>
+            <h3>Healthy Services</h3>
+            <p class="card__info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              quisquam eum animi culpa saepe pariatur est doloremque totam enim
+              aspernatur, consequuntur error velit quaerat asperiores sunt illum
+              officiis alias molestias.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- About section -->
       <section class="about | section grid">
-        <div class="about__info">
+        <div class="about__info | span-4">
           <h2 class="section__title">Leaders in the market</h2>
           <p class="about__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
@@ -130,34 +167,35 @@
           <div class="about__numbers">
             <div class="number">
               <p>2,000</p>
-              <p>CLIENTS</p>
+              <p class="number__info">CLIENTS</p>
             </div>
             <div class="number">
               <p>6,000</p>
-              <p>HEALTHY FISHES</p>
+              <p class="number__info">HEALTHY FISHES</p>
             </div>
             <div class="number">
               <p>3,000</p>
-              <p>AQUARIUMS</p>
+              <p class="number__info">AQUARIUMS</p>
             </div>
           </div>
         </div>
         <img
           src="/about-us-img.jpg"
           alt="school of blue fish in aquarium tank"
+          class="span-4"
         />
       </section>
 
       <!-- Pets section -->
       <section class="pets | section grid">
-        <h2 class="section__title">Aquarium Pets</h2>
-        <p>
+        <h2 class="section__title | span-4">Aquarium Pets</h2>
+        <p class="span-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           possimus, dolor eum minima esse vel repudiandae iusto fugit pariatur
           eligendi!
         </p>
 
-        <div class="pets__carousel">
+        <div class="pets__carousel | span-4">
           <button class="carousel__btn | left">Back</button>
           <div class="carousel__track-container">
             <ul class="carousel__track">
@@ -186,7 +224,7 @@
           </div>
           <button class="carousel__btn | right">Next</button>
 
-          <div class="carousel__nav">
+          <div class="carousel__nav | span-4">
             <button class="carousel__indicator"></button
             ><button class="carousel__indicator"></button
             ><button class="carousel__indicator"></button
@@ -199,13 +237,13 @@
       </section>
 
       <section class="blog | section grid">
-        <h2 class="section__title">Our Latest Articles</h2>
-        <p class="blog__text">
+        <h2 class="section__title | span-4">Our Latest Articles</h2>
+        <p class="blog__text | span-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
           voluptates perspiciatis quod sit debitis facilis!
         </p>
 
-        <div class="blog__card">
+        <div class="blog__card | span-4">
           <img
             src="/blog-img-1.jpg"
             alt="man standing next to tall aquarium"
@@ -218,11 +256,11 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, dolor?
             </p>
-            <a href="#" class="card__btn | btn"></a>
+            <a href="#" class="card__btn | btn">Read More</a>
           </div>
         </div>
 
-        <div class="blog__card">
+        <div class="blog__card | span-4">
           <img
             src="/blog-img-2.jpg"
             alt="man standing next to tall aquarium"
@@ -235,13 +273,13 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, dolor?
             </p>
-            <a href="#" class="card__btn | btn"></a>
+            <a href="#" class="card__btn | btn">Read More</a>
           </div>
         </div>
 
-        <div class="blog__card">
+        <div class="blog__card | span-4">
           <img
-            src="/blog-img-3.jpg"
+            src="/hero-section-img.jpg"
             alt="man standing next to tall aquarium"
             class="card__img"
           />
@@ -252,20 +290,20 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, dolor?
             </p>
-            <a href="#" class="card__btn | btn"></a>
+            <a href="#" class="card__btn | btn">Read More</a>
           </div>
         </div>
       </section>
 
       <section class="testimonials | section grid">
-        <h2 class="section__title">Testimonials</h2>
-        <p class="testimonials__text">
+        <h2 class="section__title | span-4">Testimonials</h2>
+        <p class="testimonials__text | span-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
           possimus nemo nesciunt nostrum repellendus impedit fugit ea itaque.
           At, officiis?
         </p>
 
-        <div class="testimonial__card">
+        <div class="testimonial__card | span-4">
           <p class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             magni enim! Nisi consequuntur illo quasi consequatur ducimus
@@ -283,7 +321,14 @@
               <p class="person__title">Customer</p>
             </div>
           </div>
+        </div>
 
+        <div class="testimonial__card | span-4">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
+            magni enim! Nisi consequuntur illo quasi consequatur ducimus
+            adipisci"
+          </p>
           <div class="card__person">
             <img
               src="/alexander-hipp.jpg"
@@ -295,6 +340,14 @@
               <p class="person__title">Customer</p>
             </div>
           </div>
+        </div>
+
+        <div class="testimonial__card | span-4">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
+            magni enim! Nisi consequuntur illo quasi consequatur ducimus
+            adipisci"
+          </p>
           <div class="card__person">
             <img
               src="/clay-elliot.jpg"
@@ -310,8 +363,8 @@
       </section>
     </main>
 
-    <footer class="footer | container grid">
-      <h2 class="form__logo">Aquarius</h2>
+    <footer class="footer | grid">
+      <h2 class="footer__logo">Aquarius</h2>
       <form class="footer__contact">
         <input type="email" placeholder="Enter your email" />
         <button type="submit">Subscribe</button>

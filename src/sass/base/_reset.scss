@@ -1,3 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 img {
+  display: block;
   max-width: 100%;
+}
+
+button {
+  outline: transparent;
+  border: none;
+}
+
+input {
+  outline: transparent;
 }

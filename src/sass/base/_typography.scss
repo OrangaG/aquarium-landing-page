@@ -1,0 +1,37 @@
+@use "../abstracts/mixins" as m;
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+
+$body-font: "Poppins", sans-serif;
+$heading-font: "Lora", serif;
+
+:root {
+  --biggest-font-size: 2.75rem;
+  --bigger-font-size: 2rem;
+  --big-font-size: 1.75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+}
+
+/*========== Font weight ==========*/
+$font-regular: 400;
+$font-medium: 500;
+
+// /*========== Responsive typography ==========*/
+// @include m.screen(larger) {
+//   :root {
+//     --biggest-font-size: 5rem;
+//     --bigger-font-size: 3rem;
+//     --big-font-size: 3.5rem;
+//     --h1-font-size: 2.25rem;
+//     --h2-font-size: 1.5rem;
+//     --h3-font-size: 1.25rem;
+//     --normal-font-size: 1rem;
+//     --small-font-size: 0.875rem;
+//     --smaller-font-size: 0.813rem;
+//   }
+// }
