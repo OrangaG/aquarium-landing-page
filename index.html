@@ -8,21 +8,27 @@
     <title>Aquarius</title>
   </head>
   <body>
-    <header class="header | container">
-      <nav class="grid">
-        <div class="logo">Aquarius</div>
-        <ul class="nav__links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#pets">Pets</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
+    <header class="header">
+      <nav class="nav | container">
+        <a href="#" class="nav__logo">Aquarius</a>
+        <div class="nav__links__wrapper">
+          <ul class="nav__links">
+            <li><a href="#home" class="nav__link">Home</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#about" class="nav__link">About Us</a></li>
+            <li><a href="#pets" class="nav__link">Pets</a></li>
+            <li><a href="#blog" class="nav__link">Blog</a></li>
+
+            <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          </ul>
+          <img src="./close-line.svg" alt="close-icon" class="close-btn" />
+        </div>
+
+        <img src="./menu-line.svg" alt="menu-icon" class="menu-btn" />
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="main">
       <!-- Home section -->
       <section class="home | section" id="home">
         <div class="home__info">
@@ -155,7 +161,7 @@
       </section>
 
       <!-- About section -->
-      <section class="about | section grid">
+      <section class="about | section grid" id="about">
         <div class="about__info | span-4">
           <h2 class="section__title">Leaders in the market</h2>
           <p class="about__text">
@@ -187,7 +193,7 @@
       </section>
 
       <!-- Pets section -->
-      <section class="pets | section grid">
+      <section class="pets | section grid" id="pets">
         <h2 class="section__title | span-4">Aquarium Pets</h2>
         <p class="span-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -236,7 +242,7 @@
         </div>
       </section>
 
-      <section class="blog | section grid">
+      <section class="blog | section grid" id="blog">
         <h2 class="section__title | span-4">Our Latest Articles</h2>
         <p class="blog__text | span-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -295,7 +301,7 @@
         </div>
       </section>
 
-      <section class="testimonials | section grid">
+      <section class="testimonials | section grid" id="testimonials">
         <h2 class="section__title | span-4">Testimonials</h2>
         <p class="testimonials__text | span-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
@@ -363,7 +369,7 @@
       </section>
     </main>
 
-    <footer class="footer | grid">
+    <footer class="footer | grid" id="footer">
       <h2 class="footer__logo">Aquarius</h2>
       <form class="footer__contact">
         <input type="email" placeholder="Enter your email" />
@@ -409,6 +415,9 @@
         &copy;2021 Aquarium. All rights reserved. | Designed by W3Layouts
       </p>
     </footer>
+    <a href="#" class="scrollup" id="scrollup">
+      <img src="/arrow-up-double-line.svg" alt="back to home logo"
+    /></a>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

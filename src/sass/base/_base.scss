@@ -1,7 +1,9 @@
 @use "../abstracts/colors" as c;
+@use "../base/typography" as t;
 
 body {
   background-color: c.$primary-color;
+  font-family: t.$body-font;
 }
 
 a {
@@ -13,6 +15,7 @@ h2,
 h3,
 h4 {
   color: c.$secondary-color;
+  font-family: t.$heading-font;
 }
 
 footer {

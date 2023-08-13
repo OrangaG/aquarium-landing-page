@@ -1,11 +1,30 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/colors" as c;
 
-header {
-  //   height: v.$header-height;
-  //   position: fixed;
-  //   padding: 2rem;
+.header {
+  display: grid;
+  align-content: center;
+  height: v.$header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-  .logo {
-    grid-column: 1 / span 2;
+  img {
+    width: 2rem;
+    cursor: pointer;
   }
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: v.$header-height;
+  background-color: c.$primary-color-blur;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  z-index: -1;
 }
