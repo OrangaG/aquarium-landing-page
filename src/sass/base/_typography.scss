@@ -1,6 +1,6 @@
 @use "../abstracts/mixins" as m;
 
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@400;500&display=swap");
 
 $body-font: "Poppins", sans-serif;
 $heading-font: "Lora", serif;
@@ -20,6 +20,7 @@ $heading-font: "Lora", serif;
 /*========== Font weight ==========*/
 $font-regular: 400;
 $font-medium: 500;
+$font-bold: 700;
 
 // /*========== Responsive typography ==========*/
 // @include m.screen(larger) {

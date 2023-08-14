@@ -1,46 +1,162 @@
 @use "../abstracts/colors" as c;
+@use "../base/typography" as t;
 
 .section {
   padding-block: 5rem 1rem;
+  text-align: center;
 }
 
+.section__title {
+  font-size: var(--bigger-font);
+  font-weight: t.$font-medium;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.lh {
+  line-height: 1.3;
+}
+
+%image {
+  height: 200px;
+  // width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+// Home Section
+
+.info__subheading {
+  color: c.$accent-color;
+  font-size: var(--normal-font);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.info__heading {
+  font-size: var(--biggest-font);
+  text-transform: uppercase;
+  line-height: 48px;
+  letter-spacing: -1px;
+  margin-bottom: 2rem;
+}
+
+.info__btn {
+  margin-bottom: 3rem;
+}
+
+.home__img {
+  @extend %image;
+  border-radius: 0;
+}
+
+// Services section
+
 .services__card {
-  padding: 2rem;
+  padding: 1rem;
   background-color: c.$secondary-color;
   color: c.$accent-color;
-  border-radius: 1rem;
+  border-radius: 2rem 2rem 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.design__img {
+  @extend %image;
+}
+
+.discover__info {
+  text-align: center;
+}
+
+.design__title {
+  margin-bottom: 0.5rem;
+}
+
+.section__logo {
+  font-size: var(--small-font);
+  padding-block: 0.5rem;
+  text-transform: uppercase;
 }
 
 .design__title {
   color: c.$primary-color;
+  font-weight: t.$font-medium;
 }
 
 .discover {
   color: c.$secondary-color;
+  row-gap: 2rem;
+
+  &__title {
+    font-size: var(--h1-font);
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  h3 {
+    padding-block: 1rem 0.5rem;
+  }
 
   .discover__cards {
     .card {
       padding: 1rem;
-      margin-bottom: 1rem;
-      width: 80%;
-      margin-inline: auto;
-      border-radius: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 2rem 2rem 1rem 1rem;
       color: c.$secondary-color;
       background-color: c.$accent-color;
+
+      img {
+        @extend %image;
+      }
     }
   }
 }
 
-.about__numbers {
-  background-color: c.$secondary-color;
-  .number {
-    color: c.$primary-color;
-  }
-  .number__info {
-    color: c.$accent-color;
+// About Section
+.about {
+  color: c.$secondary-color;
+  row-gap: 2rem;
+  img {
+    @extend %image;
+    height: 300px;
+    border-radius: 0;
   }
 }
 
+.about__numbers {
+  display: grid;
+  gap: 1rem;
+  background-color: c.$secondary-color;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  padding-block: 1rem;
+  .number {
+    color: c.$primary-color;
+    font-weight: t.$font-medium;
+    font-size: var(--bigger-font);
+  }
+  .figure__info {
+    color: c.$accent-color;
+    font-size: var(--small-font);
+  }
+}
+
+// Pets Section
+.pets {
+  color: c.$secondary-color;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+// Blog Section
 .blog__card {
   display: grid;
   gap: 1rem;
