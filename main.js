@@ -1,3 +1,4 @@
+// Navigation
 const nav = document.querySelector(".nav__links__wrapper");
 const links = document.querySelectorAll(".nav__link");
 const menuBtn = document.querySelector(".menu-btn");
@@ -6,6 +7,11 @@ const scrollBtn = document.getElementById("scrollup");
 const sections = document.querySelectorAll("section[id]");
 const main = document.getElementById("main");
 const footer = document.getElementById("footer");
+
+// Carousel
+const carousel = document.querySelector(".carousel__track");
+const arrowbtns = document.querySelectorAll(".carousel__btn");
+const slideWidth = document.querySelector(".carousel__slide").offsetWidth;
 
 function openMenu() {
   nav.classList.add("active");
@@ -57,3 +63,39 @@ click(footer, closeMenu);
 
 window.addEventListener("scroll", scrollUp);
 window.addEventListener("scroll", navHighlighter);
+
+// Carousel
+let isDragging = false,
+  startX,
+  startScrollLeft;
+
+arrowbtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    console.log(btn.id);
+    carousel.scrollLeft += btn.id === "left" ? -slideWidth : slideWidth;
+  });
+});
+
+const dragStart = (e) => {
+  isDragging = true;
+  carousel.classList.add("dragging");
+  // Records the initial cursor and scroll position of the carousel
+  startX = e.pageX;
+  startScrollLeft = carousel.scrollLeft;
+};
+const dragging = (e) => {
+  // pageX returns the horizontal coordinate of the mouse pointer
+  // scrollLeft sets or returns the number of pixels an element's content is scrolled horizontally
+  if (!isDragging) return;
+  // Updates the scroll position of the carousel based on the cursor movement
+  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  carousel.classList.remove("dragging");
+};
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);

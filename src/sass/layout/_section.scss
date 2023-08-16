@@ -21,7 +21,6 @@
 
 %image {
   height: 200px;
-  // width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 1rem 1rem 0 0;
@@ -153,6 +152,75 @@
 
   p {
     margin-bottom: 2rem;
+  }
+}
+
+.carousel__track-container {
+  background: c.$secondary-color;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.carousel__track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain; //Containing the scrolling to only the container
+  padding-inline: 0.5rem;
+  overflow: hidden;
+}
+
+.carousel__slide {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 1rem;
+  background-color: #333;
+  border-radius: 0.5rem;
+  img {
+    width: 100%;
+    aspect-ratio: 1.618/1;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  p {
+    color: c.$secondary-color;
+    padding-inline: 1rem;
+  }
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory; //The order matters as the mandatory has to be the last one or it will not work
+  scroll-padding-inline: 0.5rem;
+  //This adds some padding to the slides that is lost when the snap align is set up
+
+  & > * {
+    scroll-snap-align: start; //This ensures that the carousel slides will snap to the start inside the carousel track. No slide will end up in the middle during sliding.
+  }
+  & > li:last-child {
+    scroll-snap-align: end;
+    //Ensures that the last slide snaps to the end as well
+  }
+}
+
+.dragging {
+  cursor: grab;
+  user-select: none;
+}
+.carousel__btn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  background: c.$secondary-color;
+
+  img {
+    width: 1.5rem;
+  }
+  &:nth-of-type(1) {
+    margin-right: 5rem;
   }
 }
 

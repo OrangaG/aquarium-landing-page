@@ -40,7 +40,7 @@
         <img
           src="/blog-img-3.jpg"
           alt="yellow fish in aquarium"
-          class="home__img"
+          class="home__img | span-4"
         />
       </section>
 
@@ -202,33 +202,44 @@
         </p>
 
         <div class="pets__carousel | span-4">
-          <button class="carousel__btn | left">Back</button>
           <div class="carousel__track-container">
-            <ul class="carousel__track">
+            <ul class="carousel__track | span-4 snaps-inline">
               <li class="carousel__slide">
-                <img src="/pet-1.jpg" alt="" />
+                <img src="/pet-1.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-2.jpg" alt="" />
+                <img src="/pet-2.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-3.jpg" alt="" />
+                <img src="/pet-3.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-4.jpg" alt="" />
+                <img src="/pet-4.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-5.jpg" alt="" />
+                <img src="/pet-5.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-6.jpg" alt="" />
+                <img src="/pet-6.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
               <li class="carousel__slide">
-                <img src="/pet-7.jpg" alt="" />
+                <img src="/pet-7.jpg" alt="" draggable="false" />
+                <p>Lorem ipsum dolor sit amet.</p>
               </li>
             </ul>
           </div>
-          <button class="carousel__btn | right">Next</button>
+          <button class="carousel__btn" id="left">
+            <img src="./public/arrow-left-s-line .svg" alt="button icon" />
+          </button>
+          <button class="carousel__btn" id="right">
+            <img src="/arrow-right-s-line.svg" alt="button icon" />
+          </button>
 
           <div class="carousel__nav | span-4">
             <button class="carousel__indicator"></button
