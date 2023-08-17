@@ -1,11 +1,22 @@
-.footer__logo {
-  grid-column: span 4;
-}
+@use "../abstracts/colors" as c;
 
-.footer__contact {
-  grid-column: span 4;
-}
+.footer {
+  padding-top: 1rem;
 
-.footer__info {
-  grid-column: span 4;
+  &__logo {
+    color: c.$primary-color;
+  }
+  .info__title {
+    color: c.$accent-color;
+    margin-bottom: 0.5rem;
+  }
+
+  &__info {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .attribution {
+    font-size: var(--smaller-font);
+  }
 }

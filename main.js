@@ -68,11 +68,20 @@ window.addEventListener("scroll", navHighlighter);
 let isDragging = false,
   startX,
   startScrollLeft;
+let scrollWidth = carousel.scrollWidth - slideWidth;
+
+const showBtn = () => {
+  arrowbtns[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+  arrowbtns[1].style.display =
+    scrollWidth - carousel.scrollLeft < 20 ? "none" : "block";
+  console.log(scrollWidth, carousel.scrollLeft);
+};
 
 arrowbtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    console.log(btn.id);
     carousel.scrollLeft += btn.id === "left" ? -slideWidth : slideWidth;
+    setTimeout(() => showBtn(), 60);
+    console.log(slideWidth, carousel.scrollWidth, carousel.scrollLeft);
   });
 });
 
